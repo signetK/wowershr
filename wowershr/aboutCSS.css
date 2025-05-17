@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.headline {
+    position: relative;
+    left: 0px;
+    top: 80px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+}
+
+.summer-promo {
+    margin-left: 15px;
+    margin-bottom: 24px;
+    padding: 0px;
+    display: flex;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: var(--title-font-family, 'Inter');
+    font-weight: var(--title-font-weight, 700);
+    font-size: var(--title-font-size, 64px);
+    letter-spacing: var(--title-letter-spacing, -1.2px);
+    color: #FDFBFB;
+}
+
+.summer_promo {
+    margin-left: 15px;
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #FDFBFB;
+    margin-bottom: 220px;
+    padding: 0px;
+}
+

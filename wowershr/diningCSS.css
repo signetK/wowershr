@@ -1,0 +1,126 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.diningContainer {
+    max-width: 800px; 
+    margin: 30px auto; 
+}
+
+.restaurant {
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 40px;
+    background-color: #263859; 
+    padding: 20px; 
+    border-radius: 10px; 
+    border: 1px solid #FFFFFF;
+}
+
+.restaurant img {
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
+    margin-right: 40px;
+    border-radius: 10px;
+}
+
+.restaurant p {
+    margin: 0;
+    max-width: 400px; 
+}
+
+.restaurant-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Ensures text is left-aligned */
+    max-width: 400px; 
+}
+
+.restaurant h4 {
+    margin: 0 0 10px 0; /* Adjusts spacing around the heading */
+    text-align: center;
+    font-size: 20px;
+}
+
+.restaurant p {
+    margin: 0; /* Removes default margin from paragraph */
+    text-align:justify;
+}
+
+.restaurant:hover {
+    transform: scale(1.1); /* Increase size by 10% */
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+  }
+
+  .popup .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: transparent; 
+    width: auto; 
+    height: auto; 
+    z-index: 2;
+    text-align: center;
+    padding: 0;
+    transition: transform 300ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup .close-btn {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .popup.active .overlay {
+    display: block;
+    position: fixed; /* Ensure overlay also stays fixed */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+
+  .popup.active .content {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .cuisine-img img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+  }

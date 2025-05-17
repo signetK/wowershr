@@ -1,0 +1,241 @@
+<!doctype html>
+<title> WHR | Rooms </title>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="roomsCSS.css">
+    </head> 
+
+    <body>
+      <!--Header-->
+        <header>
+            <img src="pictures/wowers.png" width="100" height="100">
+    
+            <div class="wowers-hotel-restaurant">
+                WOWERS HOTEL &amp; RESTAURANT
+            </div>
+    
+            <!--Navigation-->
+            <div class="items"> 
+            <span class="about-1">
+            <a href="index.php" class="about_us_text">About</a>
+            </span>
+    
+            <span class="rooms">
+            <a href="rooms.html" class="rooms_text">Room</a>
+            </span>
+                
+            <span class="dining"> 
+            <a href="dining.html" class="dining_text"> Dining</a>
+            </span>
+
+            <span class="reserve"> 
+              <a href="reserve.php" class="reserve_text"> Reserve</a>
+            </span>
+        </div>
+    </header>
+
+    <!--Container for the contents-->
+    <div class="portfolio">
+          <div class="copy-4">
+            <span class="rooms-title">
+              ROOMS
+            </span>
+            <br/>
+            <br/> 
+            <span class="room-desc">
+              At our hotel, we believe that the experience begins the moment you step through our doors. Our commitment to providing a memorable stay starts with our
+              meticulously crafted rooms, each designed with the utmost care and attention to detail.<br />
+              <br/>
+              Each room is a haven of comfort, boasting contemporary decor and furnishings that create a soothing atmosphere. Whether you&#39;re here for business or 
+              leisure, our accommodations cater to your every need, ensuring that your stay is both productive and rejuvenating.
+            </span>
+          </div>
+
+          <!--Container for the whole room content-->
+          <div class="group-1">
+            <div class="container-5">
+
+              <div class="container-6">
+                <div class="card" onclick="togglePopupSDR()">
+                  <div class="image"> </div>
+                  <div class="copy">
+                    <div class="single-double-room">
+                      Single/Double Room
+                    </div>
+                    <span class="single-double-desc">
+                      This versatile room is designed to accommodate either one or two guests, providing flexibility and comfort. Whether you are traveling alone or with a companion, this room ensures a pleasant stay with all the necessary amenities.
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!--Single/Double Room Popup-->
+              <div class="popup" id="popupSDR">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopupSDR()">&times;</div>
+                    <h1>Single/Double Room</h1>
+                    <h4>Price: 5,000</h4>
+                    <p>
+                      <b>Amenities:</b><br>
+                      2 Queen-sized bed<br>
+                      Coffee maker<br>
+                      Flat-screen TV with cable<br>
+                      Shower/tub combination<br>
+                      High-speed Wi-Fi<br>
+                      Work desk
+                    </p>
+                </div>
+            </div>            
+
+              <!--Deluxe Room Popup-->
+              <div class="container-4">
+                <div class="card-1" onclick="togglePopupDel()">
+                  <div class="image-1">
+                  </div>
+                  <div class="copy-1">
+                    <div class="deluxe-room">
+                      Deluxe Suite
+                    </div>
+                    <span class="deluxe-desc">
+                      The Deluxe Suite offers a harmonious blend of comfort and elegance, perfect for both business travelers and leisure guests. This spacious suite features a separate living area with plush seating and a work desk, providing an ideal environment for relaxation or productivity.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="popup" id="popupDel">
+              <div class="overlay"></div>
+              <div class="content">
+                <div class="close-btn" onclick="togglePopupDel()"> &times; </div>
+                  <h1>Deluxe Suite</h1>
+                  <h4>Price: 10,000</h4>
+                  <p>
+                    <b>Amenities:</b><br>
+                    King-sized bed<br>
+                    50-inch smart TV<br>
+                    High-speed Wi-Fi<br>
+                    Nespresso machine<br>
+                    Fully stocked minibar<br>
+                    Walk-in shower<br>
+                    Plush bathrobes and high-end toiletries
+                  </p>
+              </div>
+            </div>
+
+            <!--Luxury Room Popup-->
+            <div class="container-3">
+              <div class="card-2" onclick="togglePopupLux()">
+                <div class="image-2">
+                </div>
+                <div class="copy-2">
+                  <div class="luxury-room">
+                    Luxury Suite
+                  </div>
+                  <span class="luxury-desc">
+                    The Luxury Suite exudes sophistication and style, catering to guests seeking an elevated experience. This suite features an expansive layout with a well-appointed living room, a dining area, and a private bedroom.
+                  </span>
+                </div>
+              </div>
+
+              <div class="popup" id="popupLux">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopupLux()"> &times; </div>
+                  <h1>Luxury Suite</h1>
+                  <h4>Price: 20,000</h4>
+                  <p>
+                    <b>Amenities:</b><br>
+                    2 King-sized bed<br>
+                    Flat-screen TV<br>
+                    High-speed Wi-Fi<br>
+                    Smart Fridge<br>
+                    In-room safe<br>
+                    Rainfall shower<br>
+                    Designer bath essentials
+                  </p>
+                </div>
+              </div>
+
+              <!--Presidential Room Popup-->
+              <div class="card-3" onclick="togglePopupPres()">
+                <div class="image-3">
+                </div>
+                <div class="copy-3">
+                  <div class="presidential-suite-1">
+                    Presidential Suite
+                  </div>
+                  <span class="presidential-desc">
+                    The Presidential Suite is the epitome of luxury and grandeur, offering an unparalleled experience for the most discerning guests. This opulent suite features multiple rooms, including a grand living room, a formal dining area, a private office, and a master bedroom with a king-sized bed and exquisite linens.
+                  </span>
+                </div>
+              </div>
+
+              <div class="popup" id="popupPres">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopupPres()"> &times; </div>
+                    <h1>Presidential Suite</h1>
+                    <h4>Price: 20,000</h4>
+                    <p>
+                      <b>Amenities:</b><br>
+                      California King Bed<br>
+                      Curved OLED flat-screen TVs with premium channels<br>
+                      High-speed Wi-Fi<br>
+                      Fully stocked premium minibar<br>
+                      Jacuzzi tub<br>
+                      24/7 butler service<br>
+                      Exclusive club lounge access<br>
+                      Private elevator<br>
+                      Customized essentials
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer Room Popup-->
+    <footer>
+        <div class="wowershr-com">
+            <p>wowershr.com </p>
+        </div>
+
+        <!--Contact_Footer-->
+        <div class="contact-info-container">
+            <span class="contact_us_text">  
+                    Contact Us
+                <br>
+            </span>
+    
+            <span class="contact_info">
+                Pantropiko Island, Philippines <br>
+                wowershr@gmail.com <br>
+                +63 912 055 0056
+            </span>
+        </div>
+    </footer>
+    </body>
+
+    <script>
+       function togglePopupSDR() {
+          document.getElementById("popupSDR").classList.toggle("active")
+      }
+
+      function togglePopupDel() {
+          document.getElementById("popupDel").classList.toggle("active")
+      }
+
+      function togglePopupLux() {
+          document.getElementById("popupLux").classList.toggle("active")
+      }
+
+      function togglePopupPres() {
+          document.getElementById("popupPres").classList.toggle("active")
+      }
+    </script>
+</html>

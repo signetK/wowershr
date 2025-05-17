@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<title> WHR | Dining </title>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="diningCSS.css">
+</head>
+
+<body> 
+    <!--Header-->
+    <header>
+        <img src="pictures/wowers.png" width="100" height="100">
+
+        <div class="wowers-hotel-restaurant">
+            WOWERS HOTEL &amp; RESTAURANT
+        </div>
+
+        <!--Navigation-->
+        <div class="items"> 
+            <span class="about-1">
+            <a href="index.php" class="about_us_text">About</a>
+            </span>
+
+            <span class="rooms">
+            <a href="rooms.html" class="rooms_text">Room</a>
+            </span>
+            
+            <span class="dining"> 
+            <a href="dining.html" class="dining_text"> Dining</a>
+            </span>
+
+            <span class="reserve"> 
+                <a href="reserve.php" class="reserve_text">Reserve</a>
+            </span>
+        </div>
+    </header>
+
+    <!--Container for Dining and Display the Restaurants-->
+    <div class="diningContainer">
+        <div class="restaurant" onclick="togglePopupJap()">
+            <img src="pictures/japanese.jpg" alt="Japanese Restaurant">  
+            <div class="restaurant-text">
+                <h4>Japanese Restaurant</h4>
+                <p>Experience the taste of Japan with our authentic dishes prepared with precision and care. From sushi and sashimi to ramen and tempura, our menu offers a selection of Japanese delights.</p>
+            </div>
+        </div>
+        <div class="restaurant" onclick="togglePopupChi()">
+            <img src="pictures/chinese.jpg" alt="Chinese Restaurant">
+            <div class="restaurant-text">
+                <h4>Chinese Restaurant</h4>
+                <p>Indulge in the rich flavors of Chinese cuisine. From savory stir-fries to hearty noodle dishes, our menu showcases the culinary traditions of China.</p>
+            </div>
+        </div>
+        <div class="restaurant" onclick="togglePopupInd()">
+            <img src="pictures/indian.jpg" alt="Indian Restaurant">
+            <div class="restaurant-text">
+                <h4>Indian Restaurant</h4>
+                <p>Embark on a journey through the vibrant and spicy tastes of India. With a tantalizing array of curries, tandoori dishes, and traditional bread, offering something for every palate.</p>
+            </div>
+        </div>
+        <div class="restaurant" onclick="togglePopupMex()">
+            <img src="pictures/mexican.jpg" alt="Mexican Restaurant">
+            <div class="restaurant-text">
+                <h4>Mexican Restaurant</h4>
+                <p>Discover the bold and spicy flavors of Mexico. From tangy tacos and burritos to zesty enchiladas and fajitas.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="wowershr-com">
+            <p>wowershr.com</p>
+        </div>
+
+        <!--Contact_Footer-->
+        <div class="contact-info-container">
+            <span class="contact_us_text">  
+                    Contact Us
+
+                <br>
+            </span>
+    
+            <span class="contact_info">
+                Pantropiko Island, Philippines <br>
+                wowershr@gmail.com <br>
+                +63 912 055 0056
+            </span>
+        </div>
+    </footer>
+
+    <!--Pop Ups when Clicking the Containers-->
+    <div class="popup" id="popupJap">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopupJap()"> &times; </div>
+          <div class="cuisine-img">
+              <img src="pictures/jap-cuisine.png" alt="Japanese Cuisine" onclick="togglePopupJap()">
+          </div>
+        </div>
+      </div>
+
+      <div class="popup" id="popupChi">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopupChi()"> &times; </div>
+          <div class="cuisine-img">
+              <img src="pictures/chi-cuisine.png" alt="Chinese Cuisine" onclick="togglePopupChi()">
+          </div>
+        </div>
+      </div>
+
+      <div class="popup" id="popupInd">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopupInd()"> &times; </div>
+          <div class="cuisine-img">
+              <img src="pictures/ind-cuisine.png" alt="Indian Cuisine" onclick="togglePopupInd()">
+          </div>
+        </div>
+      </div>
+
+      <div class="popup" id="popupMex">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopupMex()"> &times; </div>
+          <div class="cuisine-img">
+              <img src="pictures/mex-cuisine.png" alt="Mexican Cuisine" onclick="togglePopupMex()">
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        function togglePopupJap() {
+            document.getElementById("popupJap").classList.toggle("active");
+        }
+
+        function togglePopupChi() {
+            document.getElementById("popupChi").classList.toggle("active");
+        }
+
+        function togglePopupInd() {
+            document.getElementById("popupInd").classList.toggle("active");
+        }
+
+        function togglePopupMex() {
+            document.getElementById("popupMex").classList.toggle("active");
+        }
+      </script>
+</body>
+</html>

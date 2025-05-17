@@ -1,0 +1,129 @@
+body{
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #070f2b;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+}
+
+footer {
+    background-color: #070f2b;
+    position: relative;
+    height: 120px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #ffffff;
+    width: 100%;
+}
+
+a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+.contact-info-container {
+    margin-top: -82px;
+}
+
+.contact_us_text {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 32px;
+    text-decoration-line: underline;
+    line-height: 1.5;
+    transition: font-size 0.3s;
+    margin-right: 10px;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.wowers-hotel-restaurant {
+    margin: 38px 2px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: var(--body-text-font-family, 'Inter');
+    font-weight: var(--body-text-font-weight, 500);
+    font-size: var(--body-text-font-size, 20px);
+    line-height: var(--body-text-line-height, 1.5);
+    color: #FFFFFF;
+}
+
+.items {
+    display: flex; 
+    margin-left: auto;
+    margin-right: 80px;
+    margin-top: 37px; 
+}
+
+.about-1, .rooms, .dining, .reserve{ 
+    margin-right: 15px;
+    width: 100px;
+    overflow-wrap: break-word;
+    font-family: var(--body-text-font-family, 'Inter');
+    font-weight: var(--body-text-font-weight, 500);
+    font-size: var(--body-text-font-size, 20px);
+    line-height: var(--body-text-line-height, 1.5);
+    color: #FFFFFF;
+}
+
+.dining_text:hover, .about_us_text:hover , .rooms_text:hover{
+    transition: font-size 0.3s;
+    font-size: 36px; 
+}
+
+.wowershr-com {
+    display: flex;
+    margin-right: auto; 
+    margin-left: 10px; 
+    width: 10px; 
+    overflow-wrap: break-word;
+    font-family: var(--subheading-font-family, 'Inter');
+    font-weight: var(--subheading-font-weight, 400);
+    font-size: var(--subheading-font-size, 24px);
+    line-height: var(--subheading-line-height, 1.5);
+    color: #FFFFFF;
+}
+
+.hotelpic{
+    position: absolute;
+    z-index: -2;
+    width:1500px;
+    height: 700px;
+}
+
+.reserve_text {
+    margin-top: 2px;
+    background-color: #263859;
+    color: #ffffff;
+    padding: 0px 2px 2px 2px; /* Adjust padding: top, right, bottom, left */
+    border: 5px solid #263859;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.reserve_text:hover {
+    background-color: #ffffff;
+    color: #263859;
+    border: 5px solid #ffffff
+}
+
+

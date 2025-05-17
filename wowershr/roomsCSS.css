@@ -1,0 +1,361 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.portfolio .deluxe {
+display: flex;
+align-self: flex-start;
+width: 301px;
+box-sizing: border-box;
+}
+
+.portfolio .luxury-suite {
+position: absolute;
+left: 98px;
+bottom: 631px;
+display: flex;
+width: 301px;
+box-sizing: border-box;
+}
+
+.portfolio .presidential-suite {
+margin: 0 0 322px 375px;
+display: flex;
+width: 301px;
+box-sizing: border-box;
+}
+
+.portfolio .single-room {
+display: flex;
+align-self: flex-start;
+width: 301px;
+box-sizing: border-box;
+}
+
+.portfolio .container {
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: auto;
+height: fit-content;
+box-sizing: border-box;
+}
+
+.portfolio {
+  padding:20px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column; /* Ensure vertical alignment */
+  align-items: center;
+  width: 100%; /* Adjusted to full width */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.portfolio .card {
+position: relative;
+margin-bottom: 3.5px;
+display: flex;
+width: 621px;
+height: 525.5px;
+box-sizing: border-box;
+}
+.portfolio .image {
+border-radius: 8px;
+background: url('pictures/singledouble.jpg') 50% / cover no-repeat ;
+width: 621px;
+height: 337px;
+}
+.portfolio .copy {
+position: absolute;
+left: 10px;
+right: 30.5px;
+bottom: 0px;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+}
+.portfolio .single-double-room {
+margin-bottom: 4px;
+display: inline-block;
+align-self: flex-start;
+overflow-wrap: break-word;
+font-family: 'Inter';
+font-weight: 700;
+font-size: 24px;
+line-height: 1.5;
+color: #000000;
+}
+.portfolio .single-double-desc {
+overflow-wrap: break-word;
+font-family: var(--body-text-font-family, 'Inter');
+font-weight: var(--body-text-font-weight, 500);
+font-size: var(--body-text-font-size, 20px);
+line-height: var(--body-text-line-height, 1.5);
+color: #828282;
+}
+.portfolio .card-1 {
+margin-bottom: 4px;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: fit-content;
+box-sizing: border-box;
+}
+.portfolio .image-1 {
+border-radius: 8px;
+background: url('pictures/deluxe.jpg') 50% / cover no-repeat;
+margin-bottom: 24px;
+width: 621px;
+height: 341px;
+}
+.portfolio .copy-1 {
+margin-right: 25px;
+display: flex;
+flex-direction: column;
+width: fit-content;
+box-sizing: border-box;
+}
+.portfolio .deluxe-room {
+margin-bottom: 4px;
+display: inline-block;
+align-self: flex-start;
+overflow-wrap: break-word;
+font-family: 'Inter';
+font-weight: 700;
+font-size: 24px;
+line-height: 1.5;
+color: #000000;
+}
+.portfolio .deluxe-desc {
+overflow-wrap: break-word;
+font-family: var(--body-text-font-family, 'Inter');
+font-weight: var(--body-text-font-weight, 500);
+font-size: var(--body-text-font-size, 20px);
+line-height: var(--body-text-line-height, 1.5);
+color: #828282;
+}
+.portfolio .card-2 {
+margin: 0 113px 29px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+box-sizing: border-box;
+}
+.portfolio .image-2 {
+border-radius: 8px;
+background: url('pictures/luxury.jpg') 50% / cover no-repeat;
+margin-bottom: 24px;
+width: 621px;
+height: 341px;
+}
+.portfolio .copy-2 {
+margin-right: 32.5px;
+display: flex;
+flex-direction: column;
+width: fit-content;
+box-sizing: border-box;
+}
+.portfolio .luxury-room {
+margin-bottom: 4px;
+display: inline-block;
+align-self: flex-start;
+overflow-wrap: break-word;
+font-family: 'Inter';
+font-weight: 700;
+font-size: 24px;
+line-height: 1.5;
+color: #000000;
+}
+.portfolio .luxury-desc {
+overflow-wrap: break-word;
+font-family: var(--body-text-font-family, 'Inter');
+font-weight: var(--body-text-font-weight, 500);
+font-size: var(--body-text-font-size, 20px);
+line-height: var(--body-text-line-height, 1.5);
+color: #828282;
+}
+.portfolio .card-3 {
+display: flex;
+flex-direction: column;
+align-items: center;
+box-sizing: border-box;
+}
+.portfolio .image-3 {
+border-radius: 8px;
+background: url('pictures/presidential.jpg') 50% / cover no-repeat;
+margin-bottom: 24px;
+width: 621px;
+height: 340px;
+}
+.portfolio .copy-3 {
+margin-right: 25px;
+display: flex;
+flex-direction: column;
+width: fit-content;
+box-sizing: border-box;
+}
+.portfolio .presidential-suite-1 {
+margin-bottom: 4px;
+display: inline-block;
+align-self: flex-start;
+overflow-wrap: break-word;
+font-family: 'Inter';
+font-weight: 700;
+font-size: 24px;
+line-height: 1.5;
+color: #000000;
+}
+.portfolio .presidential-desc {
+overflow-wrap: break-word;
+font-family: var(--body-text-font-family, 'Inter');
+font-weight: var(--body-text-font-weight, 500);
+font-size: var(--body-text-font-size, 20px);
+line-height: var(--body-text-line-height, 1.5);
+color: #828282;
+}
+.portfolio .copy-4 {
+position: relative;
+margin: 10px 30px 60px 30px;
+width: fit-content;
+box-sizing: border-box;
+}
+.portfolio .rooms-title {
+padding-top: 20px;
+position: relative;
+overflow-wrap: break-word;
+font-family: var(--title-font-family, 'Inter');
+font-weight: var(--title-font-weight, 700);
+font-size: var(--title-font-size, 64px);
+letter-spacing: var(--title-letter-spacing, -1.3px);
+color: #000000;
+}
+.portfolio .room-desc {
+position: relative;
+left: 0%;
+bottom: 10px;
+translate: -50% 0;
+overflow-wrap: break-word;
+font-family: var(--subheading-font-family, 'Inter');
+font-weight: var(--subheading-font-weight, 400);
+font-size: var(--subheading-font-size, 20px);
+line-height: var(--subheading-line-height, 1.5);
+color: #000000;
+}
+
+.portfolio .group-1 {
+margin: 0 5px 5px 5px;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: fit-content;
+box-sizing: border-box;
+}
+.portfolio .container-1 {
+display: flex;
+flex-direction: row;
+box-sizing: border-box;
+}
+.portfolio .container-2 {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: fit-content;
+box-sizing: border-box;
+}
+.portfolio .container-3 {
+display: flex;
+flex-direction: row;
+width: fit-content;
+box-sizing: border-box;
+}
+
+.portfolio .container-4 {
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+}
+.portfolio .container-5 {
+margin-bottom: 50px;
+display: flex;
+flex-direction: row;
+width: fit-content;
+box-sizing: border-box;
+}
+.portfolio .container-6 {
+margin: 0 113px 30px 0;
+display: flex;
+flex-direction: column;
+width: 621px;
+height: fit-content;
+box-sizing: border-box;
+}
+
+.popup .overlay {
+position: fixed;
+top: 0px;
+left: 0px;
+width: 100vw;
+height: 100vh;
+background: rgba(0, 0, 0, 0.7);
+z-index: 1;
+display: none;
+}
+
+.popup .content {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(0);
+background: #fff;
+width: 60%; /* Adjust the width as needed */
+max-width: 450px; /* Limit the maximum width */
+max-height: 80vh; /* Limit the maximum height */
+overflow-y: auto; /* Enable vertical scrolling if needed */
+z-index: 2;
+text-align: center;
+padding: 20px;
+box-sizing: border-box;
+transition: transform 300ms ease-in-out;
+border-radius: 8px;
+}
+
+.popup .close-btn {
+position: absolute;
+right: 20px;
+top: 20px;
+width: 30px;
+height: 30px;
+background: #222;
+color: #fff;
+font-size: 25px;
+font-weight: 600;
+line-height: 30px;
+text-align: center;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.popup.active .overlay {
+display: block;
+}
+
+.popup.active .content {
+transform: translate(-50%, -50%) scale(1);
+}
+
+.portfolio .single-double-room,
+.portfolio .deluxe-room,
+.portfolio .luxury-room,
+.portfolio .presidential-suite-1,
+.popup .close-btn, .portfolio .image,
+.portfolio .image-1,
+.portfolio .image-2,
+.portfolio .image-3 {
+    cursor: pointer;
+}
